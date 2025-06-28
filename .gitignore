@@ -6,3 +6,4 @@
 #git checkout tags/<name_n>, desplazmiento del head usando con tags
 #git branch <>, crear nuevo flujo
 #git switch <>, cambiar a otro flujo con nombre <>
+#git merge
