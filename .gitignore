@@ -7,3 +7,7 @@
 #git branch <>, crear nuevo flujo
 #git switch <>, cambiar a otro flujo con nombre <>
 #git merge
+#git stash, guardado temporal (WIP) sin hacer commit en la rama
+#git stash list, listar todos los stash
+#git stash pop, recuperar ficheros del guradado temporal
+#git stash drop, eliminar lista de stash
