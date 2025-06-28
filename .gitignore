@@ -11,3 +11,7 @@
 #git stash list, listar todos los stash
 #git stash pop, recuperar ficheros del guradado temporal
 #git stash drop, eliminar lista de stash
+#git branch -d <flujo>, eliminar una rama
+# al eliminar se quita la referncia a la rama/flujo pero todos los commits siguen exitiendo y son solo acessibles por su hash
+# limpia el log para simplificar el arbol del proyecto
+#git reglog, log completo de aciones
