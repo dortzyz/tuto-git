@@ -1,1 +1,18 @@
 #coentarios de readme
+
+#ficheros para ignorar del reporsitorio git
+#git reset --hard <hash>
+#git tag <name_n>, tag agregado en el commit head
+#git tag, listado de tags
+#git checkout tags/<name_n>, desplazmiento del head usando con tags
+#git branch <>, crear nuevo flujo
+#git switch <>, cambiar a otro flujo con nombre <>
+#git merge
+#git stash, guardado temporal (WIP) sin hacer commit en la rama
+#git stash list, listar todos los stash
+#git stash pop, recuperar ficheros del guradado temporal
+#git stash drop, eliminar lista de stash
+#git branch -d <flujo>, eliminar una rama
+# al eliminar se quita la referncia a la rama/flujo pero todos los commits siguen exitiendo y son solo acessibles por su hash
+# limpia el log para simplificar el arbol del proyecto
+#git reglog, log completo de aciones
