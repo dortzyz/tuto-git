@@ -15,7 +15,9 @@ git status , estado de los ficheros: con cambios, pendientes de añadir
 
 git log , linea de commits hechos en la rama
 
-git reset
+git reset fichero, reset/quitar cambios añadidos al stage con git add
+
+git checkout fichero/hash/tag , reset cambios del fichero al ultimo commit, desplazmiento al estado del commit usando el hash o su tag
 
 .gitignore , archivo deode se especifican los ficheros para ignorar del reporsitorio
 
@@ -24,8 +26,6 @@ git reset --hard <hash> , remover/devolver commits a la rama main
 git tag <name_n>, etiquetar un commit con un nombre, tag en donde se ubica el head
 
 git tag, listado de tags
-
-git checkout tags/<name_n>, desplazmiento del head a un commit con hash o con tags
 
 git branch <>, crear nuevo flujo
 
@@ -56,4 +56,6 @@ git push -u origin main , enviar ficheros a un nuevo repositorio github
 git fetch , descargar solo los cambios del arbol de commits
 
 git pull , decargar ficheros del reporsitorio en github
+
+git push , subir cambios a github
 
