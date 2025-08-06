@@ -1,61 +1,75 @@
-## Apuntes de comandos git
+## Apuntes de comandos Git
 
-## Configuracion de usuario local
-git config --global , configuracion global para la maquina local
-    user.name"<>"
-    user.email"<>"
+### Configuracion de usuario local
+git config --global , configuracion global para la maquina local:
+    user.name"nombre del autor"
+    user.email"correo"
 
-git init , iniciar repositorio git en directorio raiz
+### Iniciar git
 
-git add <> , añadir ficheros para hacer commit
+git init , iniciar repositorio git en directorio raiz.
 
-git commit -m "<>" , hacer fotografia, guardar cambios
+#### Nombre de archivo para ignorar ficheros:
+.gitignore , archivo donde se especifican los ficheros para ignorar del reporsitorio.
 
-git status , estado de los ficheros: con cambios, pendientes de añadir
+### Comandos mas usados
 
-git log , linea de commits hechos en la rama
+git add <> , añadir ficheros para hacer commit.
 
-git reset fichero, reset/quitar cambios añadidos al stage con git add
+git commit -m "comentario para el commit" , hacer fotografia, guardar cambios.
 
-git checkout fichero/hash/tag , reset cambios del fichero al ultimo commit, desplazmiento al estado del commit usando el hash o su tag
+git status , estado de los ficheros: con cambios, pendientes de añadir.
 
-.gitignore , archivo deode se especifican los ficheros para ignorar del reporsitorio
+git log , linea de commits hechos en la rama.
 
-git reset --hard <hash> , remover/devolver commits a la rama main
+git checkout <fichero/hash/tag> , restaurar cambios guardados del fichero al del ultimo commit, desplazamiento entre commits usando el hash o el tag.
 
-git tag <name_n>, etiquetar un commit con un nombre, tag en donde se ubica el head
+git restore <fichero> , restaruar los cambios guardados del fichero que aun no sean añadido al stage (git add), comando nuevo separad de hit checkout.
 
-git tag, listado de tags
+git tag <name_n>, etiquetar un commit con un nombre, tag en donde se ubica el head.
 
-git branch <>, crear nuevo flujo
+git tag, listado de tags.
 
-git switch <>, cambiar a otro flujo con nombre <>
+git branch <>, crear nuevo flujo.
 
-git merge , combinar ficheros de un flujo a otro
+git switch <>, cambiar a otro flujo con nombre <>.
+
+git merge , combinar ficheros de un flujo a otro.
 
 git branch -d <flujo>, eliminar una rama
-- al eliminar se quita la referncia a la rama/flujo pero todos los commits siguen exitiendo y son solo acessibles por su hash
-- limpia el log para simplificar el arbol del proyecto
+- al eliminar se quita la referncia a la rama/flujo pero todos los commits siguen exitiendo y son solo acessibles por su hash.
+- limpia el log para simplificar el arbol del proyecto.
 
-git stash, guardado temporal (WIP) sin hacer commit en la rama
+### Comandos para guardar cambios sin lanzar commit
 
-git stash list, listar todos los stash
+git stash, guardado temporal (WIP) sin hacer commit en la rama.
 
-git stash pop, recuperar ficheros del guradado temporal
+git stash list, listar todos los stash.
 
-git stash drop, eliminar lista de stash
+git stash pop, recuperar ficheros del guradado temporal.
 
-git reflog, log completo de aciones
+git stash drop, eliminar lista de stash.
 
-## comandos para interactuar entre fiheros locales y github
-### subir ficheros locales a github por primera vez
-git remote add origin <> , asociar repositorio local con un reporitorio en github
+git reflog, log completo de aciones.
 
-git push -u origin main , enviar ficheros a un nuevo repositorio github
+### Comando de git reset
 
-git fetch , descargar solo los cambios del arbol de commits
+git reset <fichero>, reset/quitar cambios añadidos al stage con git add.
 
-git pull , decargar ficheros del reporsitorio en github
+git reset --hard <hash> , remover/devolver commits a la rama main.
 
-git push , subir cambios a github
+## Comandos para interactuar entre ficheros locales y Github
+
+### Subir ficheros locales a github por primera vez
+git remote add origin <> , asociar repositorio local con un reporitorio en github.
+
+git push -u origin main , enviar ficheros a un nuevo repositorio github.
+
+### Comandos para sincronizar ficheros en Github
+
+git fetch , descargar solo los cambios del arbol de commits.
+
+git pull , decargar ficheros del reporsitorio en github.
+
+git push , subir cambios a github.
 
