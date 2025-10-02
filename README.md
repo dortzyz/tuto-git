@@ -42,13 +42,22 @@ git branch -d <flujo>, eliminar una rama
 
 ### Comandos para guardar cambios sin lanzar commit
 
-git stash, guardado temporal (WIP) sin hacer commit en la rama.
+git stash, guardado temporal (WIP) de todos los ficheros aun no comiteados sin hacer un commit en la rama.
 
-git stash list, listar todos los stash.
+git stash push -m "<>", guardado de stash con un mensaje.
 
-git stash pop, recuperar ficheros del guradado temporal.
+git stash list, listar todos los stash guardados.
 
-git stash drop, eliminar lista de stash.
+git stash apply stash@{<>}, recupera un stash con el numero de la lista sin borrarlo de la lista.
+
+git stash apply, recupera el ultimo stash realizado sin borrarlo de la lista.
+
+git stash clear, borra toda la lista de stash y no se pueden recuperar (usar solo al final).
+
+
+git stash pop, recupera el ultimo stash realizado y lo borra de la lista.
+
+git stash drop stash@{<>}, eliminar un stash de la lista.
 
 git reflog, log completo de aciones.
 
