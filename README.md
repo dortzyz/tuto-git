@@ -70,15 +70,29 @@ git reset --hard <hash> , remover/devolver commits a la rama main.
 ## Comandos para interactuar entre ficheros locales y Github
 
 ### Subir ficheros locales a github por primera vez
-git remote add origin <> , asociar repositorio local con un reporitorio en github.
+***git remote add origin (url del repositorio)*** , asociar repositorio local con un reporitorio en github.
 
-git push -u origin main , enviar ficheros a un nuevo repositorio github.
+***git push -u origin (branch)***, subir los ficheros al repositorio de github.
 
 ### Comandos para sincronizar ficheros en Github
 
-git fetch , descargar solo los cambios del arbol de commits.
+***git fetch***, descargar solo los cambios del arbol de commits.
 
-git pull , decargar ficheros del reporsitorio en github.
+***git pull***, descargar ficheros del reporsitorio en github.
 
-git push , subir cambios a github.
+***git push***, sincronizar los ficheros locales con el repositorio de github.
+
+### Comando para sobreescribir los ficheros de un repositoro en Github por un nuevo proyecto
+
+1) remover el "origin" del antiguo repositorio.
+
+***git remote rm origin***
+
+2) añadir un "origin" en el nuevo repositorio.
+
+***git remote add origin (url del antiguo repo)***
+
+3) forzar el push del nuevo repo a Github
+
+***git push -f origin main***
 
